@@ -9,8 +9,8 @@ function distance(){
       let Y2=parseFloat(document.getElementById("Y2").value);
       let Y1=parseFloat(document.getElementById("Y1").value);
       let op=document.getElementById("output");
-      let A=(X2-X1)**2+(Y2-Y1)**2
-      op.innerHTML=`Distance is: + $[A]`;
+      let D=Math.sqrt(Math.pow(X2-X1, 2) + Math.pow(Y2-Y1, 2));
+      op.innerHTML=`Distance is: + ${D}`;
 }
 /* Challenge 4: Create a function to serve as the event handler for the compound interest UI. Guidelines,
       1) Create variables and retrieve the information from the text inputs you created in Challenge 1.
@@ -22,11 +22,7 @@ function compound(){
       let R=parseFloat(document.getElementById("R").value);
       let N=parseFloat(document.getElementById("N").value);
       let T=parseFloat(document.getElementById("T").value);
-      let op=document.getElementById("out");
-      let A=P*(1+(R/N))**(N*T)
+      let op=document.getElementById("output2");
+      let A=P*(1+R/N)**(N*T)
       op.innerHTML=`Compound Interest is: + ${A}`;
 }
-      
-
-
-
