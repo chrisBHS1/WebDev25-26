@@ -13,6 +13,19 @@ function name(){
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
+function recArea(){
+      let len=parseFloat(document.getElementById("L").value);
+      let wid=parseFloat(document.getElementById("W").value);
+      let op=document.getElementById("output");
+      let A=len*wid;
+      output.innerHTML=`Area is ${A}`;
+      if(len<=0){
+        output.innerHTML="Inappropriate measurement"
+      }
+      if(wid<=0){
+        output.innerHTML="Inappropriate measurement"
+      }
+}
 
 
 
@@ -21,5 +34,5 @@ function name(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
-
+  
 }
