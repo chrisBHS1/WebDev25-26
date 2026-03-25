@@ -32,7 +32,7 @@ function balance(){
         build += `<table>`;
         output.innerHTML=build;
 }
-
+2
 
 
 
